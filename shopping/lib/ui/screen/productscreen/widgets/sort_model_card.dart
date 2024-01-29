@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import '../../../../domain/sort_type.dart';
 import '../../../res/styles.dart';
 
-
-/// Карточка итогов
+/// Модальное окно сортировки
+///
+/// Как можно упростить этот код?
 
 class SortModelCard extends StatefulWidget {
   const SortModelCard({super.key, required this.sortType});
-  
-   final SortType sortType;
+
+  final SortType sortType;
 
   @override
   State<SortModelCard> createState() => _SortModelState();
 }
 
 class _SortModelState extends State<SortModelCard> {
-
   SortType? _sortType;
   @override
   void initState() {
@@ -177,7 +177,7 @@ class _SortModelState extends State<SortModelCard> {
           padding: const EdgeInsets.only(
             left: 30,
             right: 30,
-            top: 56,
+            top: 16,
           ),
           child: SizedBox(
             width: double.infinity,
@@ -206,9 +206,6 @@ class _SortModelState extends State<SortModelCard> {
   }
 }
 
-
-
-
 // class Radilist extends StatefulWidget {
 //   const Radilist(
 //       {super.key,
@@ -220,31 +217,30 @@ class _SortModelState extends State<SortModelCard> {
 //   final SortType value;
 //   final SortType groupValue;
 //   final SortType onChanged;
-  
 
 //   @override
 //   State<Radilist> createState() => _RadilistState();
 // }
 
 // class _RadilistState extends State<Radilist> {
-  
+
+//   SortType? _sortType;
+
 //   @override
 //   Widget build(BuildContext context) {
 //     return RadioListTile(
 //       activeColor: buttonColorGreen,
 //       title: Text(
-//         widget.tittle,
+//         widget.tittle ,
 //         style: text16.copyWith(color: darkBluColor),
 //       ),
 //       value: widget.value,
 //       groupValue: widget.groupValue,
 //       onChanged: (SortType? value) {
 //         setState(() {
-          
+//           _sortType = value;
 //         });
 //       },
 //     );
 //   }
 // }
-
-

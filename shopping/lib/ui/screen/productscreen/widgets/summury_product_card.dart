@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:surf_flutter_courses_template/ui/res/styles.dart';
 
+/// Карточка итогов
+
 class SummuryProductCard extends StatelessWidget {
   const SummuryProductCard({
     super.key,
